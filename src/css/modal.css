@@ -1,0 +1,126 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(3px) !important;
+}
+
+.modalContainer {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  background-color: #ecf0f3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.modalBody {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modalForm {
+  height: 95% !important;
+}
+.modalFooter {
+  /* padding-top:20%; */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalFooter > .adminSideButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalAdminbtn {
+  border: none !important;
+  color: white !important;
+  border-radius: 10px;
+  margin: 0px 10px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalAdminbtn:focus {
+  background-color: "grey" !important;
+}
+
+.modalAdminbtn:hover {
+  cursor: pointer;
+  background-color: "grey" !important;
+}
+.modalBlueBtn {
+  background-color: var(--color-KfinBlue);
+}
+.modalBlueBtn:hover {
+  background-color: var(--color-KfinBlue-brightshade) !important;
+}
+
+.modalBlueBtn:focus {
+  background-color: var(--color-KfinBlue);
+}
+
+.modalRedBtn {
+  background-color: var(--color-KfinRed);
+}
+
+.modalRedBtn:hover {
+  background-color: var(--color-KfinRedShade) !important;
+}
+
+.modalRedBtn:focus {
+  background-color: var(--color-KfinRed);
+}
+
+.CloseBtn > button {
+  border: none;
+  color: grey !important;
+  font-family: "PoppinsMedium" !important;
+  padding: 7px 17px;
+  border-radius: 10px;
+  box-shadow: var(--softUIEffect-3) !important;
+}
+
+.modalTitle {
+  color: grey;
+  font-family: "PoppinsSemiBold" !important;
+  letter-spacing: 1px;
+}
+
+.titleContainerAdminModal {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.modalBody::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.modalBody::-webkit-scrollbar-track {
+  background: transparent !important; /* color of the tracking area */
+  margin-left: 10px !important;
+}
+
+.modalBody::-webkit-scrollbar-thumb {
+  /* color of the scroll thumb */
+  border-radius: 20px !important; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+  background-color: var(--color-KfinBlue);
+}

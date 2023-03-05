@@ -1,0 +1,140 @@
+:root {
+  --color-surface: #ecf0f3;
+
+  --color-solid: #31344b;
+  --color-primary: teal;
+  --color-KfinRed: #bd3445;
+  --color-KfinBlue: #29337d;
+  --color-KfinRedShade: #ea5166;
+  --color-text: hsl(0, 0%, 50%);
+  --color-text-1: #333333;
+  --color-text-3: whitesmoke;
+  --color-border: none;
+  --color-icon1: rgba(0, 0, 0, 0.54);
+  --color-KfinRed-brightshade: rgba(240, 142, 157);
+  --color-KfinBlue-brightshade: rgba(127, 133, 177);
+
+  --color-Gradient: var(--color-text-1);
+
+  --color-icon: rgba(0, 0, 0, 0.54);
+
+  --softUIEffect-1: 6px 6px 12px var(--boxShadowCol1),
+    -6px -6px 12px var(--boxShadowCol2);
+
+  --softUIEffect-1b: 2px 2px 6px var(--boxShadowCol4);
+
+  --softUIEffect-2: 2px 2px 5px var(--boxShadowCol1),
+    -3px -3px 7px var(--boxShadowCol2);
+  --softUIEffect-3: 3px 3px 6px var(--boxShadowCol1),
+    -3px -3px 6px var(--boxShadowCol2);
+  --softUIEffect-5: 2px 2px 4px var(--boxShadowCol3),
+    -2px -2px 4px var(--boxShadowCol2);
+  --softUIEffect-7: -6px 6px 12px #d9dde0, 6px -6px 12px var(--boxShadowCol2);
+
+  --softUIEffect-intense: 3px 3px 6px var(--boxShadowCol4),
+    -3px -3px 6px var(--boxShadowCol2);
+
+  --softUIEffect-8: 8px 8px 16px var(--boxShadowCol2), -8px -8px 16px #cbced1;
+  --softUIEffect-9: 8px 8px 8px #cbced1, -8px -8px 8px var(--boxShadowCol2);
+
+  --softUIEffect-7: 4px 4px 9px var(--boxShadowCol1),
+    -4px -4px 9px var(--boxShadowCol2);
+
+  /* There are lot of box shadows on HomePage.css Page REFER THAT */
+  /* --------------------------------- */
+  --softUIEffect-4: inset 2px 2px 5px var(--boxShadowCol1),
+    inset -3px -3px 7px var(--boxShadowCol2);
+  --softUIEffect-6: inset 6px 6px 15px var(--boxShadowCol3),
+    inset -9px -9px 14px var(--boxShadowCol2);
+  --softUIEffect-3i: inset 3px 3px 6px var(--boxShadowCol1),
+    inset -3px -3px 6px var(--boxShadowCol2);
+
+  --softUIEffect-10: inset 10px 10px 15px -10px #c3c3c3,
+    inset -10px -10px 15px -10px #ffffff;
+
+  --boxShadowCol1: #b8b9be;
+
+  --boxShadowCol2: #fff;
+
+  --boxShadowCol3: #c1c9d2;
+
+  /* Intense color */
+  --boxShadowCol4: #7d7f81;
+
+  --error404: "LightTheme404";
+}
+.container {
+  margin: 0px !important;
+  width: 100% !important;
+}
+
+.period {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  min-width: 175px;
+  min-height: 36px !important;
+  background: #ecf0f3 !important;
+  font-family: PoppinsMedium !important ;
+}
+
+.period > .css-1ry1ai7-control {
+  height: 45px !important ;
+  box-shadow: var(--softUIEffect-3i) !important ;
+  background: #ecf0f3 !important;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 10px !important;
+  font-family: PoppinsMedium !important ;
+  margin-top: -10px !important;
+  font-size: 16px !important;
+}
+
+.period > .css-1cy00mr-control{
+  /* pointer-events: auto; */
+  height: 45px !important ;
+  box-shadow: var(--softUIEffect-3i) !important ;
+  background: #ecf0f3 !important;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 10px !important;
+  opacity:0.7;
+  overflow: auto;
+  font-family: PoppinsMedium !important ;
+  margin-top: -10px !important;
+  font-size: 16px !important;
+}
+
+.period > .css-1ry1ai7-control:hover {
+  border: 0.0625rem solid var(--color-border);
+  font-family: PoppinsMedium !important ;
+}
+
+.css-g1d714-ValueContainer {
+  height: inherit !important;
+  align-items: flex-start !important;
+  overflow-y: scroll !important;
+}
+
+.period ::-webkit-scrollbar {
+  display: none;
+}
+
+.css-b8ldur-Input > div > input {
+  height: 20px !important;
+  box-shadow: none !important;
+}
+
+.css-1wa3eu0-placeholder {
+  color: #928b8d !important;
+  font-size: 14px !important;
+  font-family: "PoppinsSemiBold" !important;
+}
+
+.css-7swiwq-control {
+  height: auto !important;
+  max-height: 80px !important;
+  overflow-y: scroll;
+}
+
+.css-107lb6w-singleValue 
+{
+  color: grey !important;
+}

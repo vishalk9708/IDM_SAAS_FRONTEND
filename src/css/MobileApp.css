@@ -1,0 +1,104 @@
+.login-mobile__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.login-mobile__container,
+.register-mobile__container,
+.accessRequest__container {
+  width: 90%;
+  margin: auto;
+  margin-top: 70px !important;
+}
+
+.mobile-registration__input {
+  margin-left: -5px !important;
+}
+
+.register-input__mobile-error-mail > p,
+.register-input__mobile-error-phone > p,
+.register-input__mobile-error-password > p {
+  color: #f44336 !important;
+  margin-left: 10px !important;
+  margin-top: -10px !important;
+}
+
+.forgot-mobile__container,
+.reset-mobile__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.createuser-mobile__card {
+  width: 90% !important;
+  margin-top: 80px !important;
+}
+
+.forgot-mobile__top,
+.activate-mobile__top,
+.accessRequest-mobile__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .admin-topbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .admin-topbar__left {
+    margin-bottom: 10px !important;
+  }
+
+  .admin-topbar__right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .admin-card__top {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .admin-card__top-name-mail {
+    flex-direction: column;
+  }
+
+  .admin-card__bottom {
+    flex-direction: column;
+  }
+
+  .select-wrapper input.select-dropdown {
+    width: 95% !important;
+    min-width: 0px !important;
+    height: 2.5rem !important;
+  }
+
+  .admin-bottom__btn {
+    border-radius: 15px;
+    background-color: var(--color-surface);
+    color: black;
+    margin-bottom: 20px !important;
+  }
+
+  .admin-bottom__conatiner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-card__top-actions > div > button {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}

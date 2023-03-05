@@ -1,0 +1,119 @@
+/* --- for all select boxes ---------*/
+.card-select-dropdown-neu > div > div > ul {
+  border-radius: 15px;
+  box-shadow: var(--softUIEffect-1b) !important;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
+
+.card-select-dropdown-neu > div > div > ul::-webkit-scrollbar {
+  width: 5px !important; /* width of the entire scrollbar */
+}
+
+.card-select-dropdown-neu ::-webkit-scrollbar-track {
+  background: transparent !important; /* color of the tracking area */
+}
+
+.card-select-dropdown-neu ::-webkit-scrollbar-thumb {
+  /* color of the scroll thumb */
+  border-radius: 40px !important; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+  background-color: var(--color-KfinBlue-brightshade) !important;
+}
+
+.card-select-dropdown-neu > div > div > ul > li.selected {
+  background-color: var(--color-KfinBlue) !important;
+}
+
+.card-select-dropdown-neu > div > div > ul > li.selected > span > label > span {
+  color: white !important;
+}
+
+.card-select-dropdown-neu
+  > div
+  > div
+  > ul
+  > li.selected
+  > span
+  > label
+  > span:before,
+span:after {
+  border-right: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+}
+
+.select-wrapper input.select-dropdown {
+  width: 100% !important;
+  min-width: 200px;
+  height: 3rem;
+  padding-left: 10px !important;
+}
+
+/*-------------------------------------*/
+
+.dropdown-content {
+  border-radius: 10px !important;
+  box-shadow: var(--softUIEffect-1b) !important;
+  scroll-behavior: smooth !important;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 5px !important; /* width of the entire scrollbar */
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: transparent !important; /* color of the tracking area */
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  /* color of the scroll thumb */
+  border-radius: 40px !important; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+  background: rgb(240, 37, 63);
+  background: linear-gradient(
+    180deg,
+    rgba(240, 37, 63, 1) 11%,
+    rgba(57, 73, 191, 1) 100%
+  );
+  margin-top: 10px !important;
+}
+
+.dropdown-content > li.selected {
+  background-color: var(--color-KfinBlue) !important;
+}
+
+.dropdown-content > li.selected > span > label > span {
+  color: white !important;
+}
+
+.dropdown-content > li.selected > span > label > span:before,
+span:after {
+  border-right: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+}
+
+.dropdown-content > li:first-child > span > label > span::before {
+  background-color: transparent !important;
+}
+
+.dropdown-content > li:first-child > span > label > span {
+  background-color: #e6e6e6 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: auto !important;
+  padding-top: 3px !important;
+}
+
+.admin-card__bottom > .card-select-dropdown-neu > .input-field {
+  width: 200px !important;
+}
+
+.caret {
+  background-color: #ecf0f3 !important;
+  /* border-radius: 50% !important; */
+  z-index: 5 !important;
+  margin-left: 10px !important;
+  right: -10px !important;
+}
+
+/* ----------------------------------*/

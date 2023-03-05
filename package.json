@@ -1,0 +1,57 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto-js": "^4.0.0",
+    "http-proxy-middleware": "^2.0.0",
+    "jquery": "^3.5.1",
+    "materialize-css": "^1.0.0",
+    "nodemailer": "^6.4.17",
+    "react": "^17.0.1",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^17.0.1",
+    "react-materialize": "^3.9.2",
+    "react-modal": "^3.15.1",
+    "react-paginate": "^8.1.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-select": "^4.3.1",
+    "secure-ls": "^1.2.6",
+    "sweetalert": "^2.1.2"
+  },
+  "scripts": {
+    "start": "PORT=3101 && react-scripts start ",
+    "startDev": "react-scripts start ",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sitemap": "babel-node ./sitemap-builder.js",
+    "dockerize" : "sh ./deploy.sh 3101 idm_uat_frontend"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}

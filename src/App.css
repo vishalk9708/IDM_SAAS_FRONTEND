@@ -1,0 +1,758 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+:root {
+  --color-surface: #ecf0f3;
+
+  --color-solid: #31344b;
+  --color-primary: teal;
+  --color-KfinRed: #bd3445;
+  --color-KfinBlue: #2057a6;
+  --color-KfinRedShade: #ea5166;
+  --color-text: hsl(0, 0%, 50%);
+  --color-text-1: #333333;
+  --color-text-3: whitesmoke;
+  --color-border: none;
+  --color-icon1: rgba(0, 0, 0, 0.54);
+  --color-KfinRed-brightshade: rgba(240, 142, 157);
+  --color-KfinBlue-brightshade: rgba(127, 133, 177);
+
+  --color-Gradient: var(--color-text-1);
+
+  --color-icon: rgba(0, 0, 0, 0.54);
+
+  --softUIEffect-1: 6px 6px 12px 1px var(--boxShadowCol1),
+    -6px -6px 12px 1px var(--boxShadowCol2);
+
+  --softUIEffect-card: 6px 6px 12px 2px var(--boxShadowCol1),
+    -6px -6px 14px 2px var(--boxShadowCol2);
+
+  --softUIEffect-1b: 2px 2px 6px var(--boxShadowCol4);
+
+  --softUIEffect-2: 2px 2px 5px var(--boxShadowCol1),
+    -3px -3px 7px var(--boxShadowCol2);
+  --softUIEffect-3: 3px 3px 6px var(--boxShadowCol1),
+    -3px -3px 6px var(--boxShadowCol2);
+  --softUIEffect-5: 2px 2px 4px var(--boxShadowCol3),
+    -2px -2px 4px var(--boxShadowCol2);
+  --softUIEffect-7: -6px 6px 12px #d9dde0, 6px -6px 12px var(--boxShadowCol2);
+
+  --softUIEffect-intense: 3px 3px 6px var(--boxShadowCol4),
+    -3px -3px 6px var(--boxShadowCol2);
+
+  --softUIEffect-8: 8px 8px 16px var(--boxShadowCol2), -8px -8px 16px #cbced1;
+  --softUIEffect-9: 8px 8px 8px #cbced1, -8px -8px 8px var(--boxShadowCol2);
+
+  --softUIEffect-7: 4px 4px 9px var(--boxShadowCol1),
+    -4px -4px 9px var(--boxShadowCol2);
+
+  /* There are lot of box shadows on HomePage.css Page REFER THAT */
+  /* --------------------------------- */
+  --softUIEffect-4: inset 2px 2px 5px var(--boxShadowCol1),
+    inset -3px -3px 7px var(--boxShadowCol2);
+  --softUIEffect-6: inset 6px 6px 15px var(--boxShadowCol3),
+    inset -9px -9px 14px var(--boxShadowCol2);
+  --softUIEffect-3i: inset 3px 3px 6px var(--boxShadowCol1),
+    inset -3px -3px 6px var(--boxShadowCol2);
+
+  --softUIEffect-10: inset 10px 10px 15px -10px #c3c3c3,
+    inset -10px -10px 15px -10px #ffffff;
+
+  --boxShadowCol1: #b8b9be;
+
+  --boxShadowCol2: rgb(253, 253, 253);
+
+  --boxShadowCol3: #c1c9d2;
+
+  /* Intense color */
+  --boxShadowCol4: #7d7f81;
+
+  --error404: "LightTheme404";
+}
+
+.neumorphCard {
+  box-shadow: var(--softUIEffect-card) !important;
+}
+
+@font-face {
+  src: url(./Fonts/PoppinsSemiBold.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: PoppinsSemiBold;
+}
+
+@font-face {
+  src: url(./Fonts/PoppinsLight.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: PoppinsLight;
+}
+
+@font-face {
+  src: url(./Fonts/PoppinsMedium.ttf);
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: PoppinsMedium;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+input,
+div,
+span,
+button {
+  /* font-family: 'Poppins', sans-serif !important; */
+  font-family: "PoppinsSemiBold" !important;
+}
+
+* {
+  /* font-family : 'PoppinsSemiBold' !important; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow-x: hidden !important;
+  width: 100vw;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(90deg, #edf1f4 0%, #edf1f4 100%) !important;
+
+  /* background-color: #ecf0f3; */
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 200;
+  color: #ea5166;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+nav {
+  /* background-color: red !important; */
+  box-shadow: var(--softUIEffect-7) !important;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topnavbar {
+  position: fixed !important;
+  top: 0px !important;
+  z-index: 100 !important;
+  /* display: none !important; */
+}
+
+.nav-wrapper > a:hover {
+  background-color: transparent !important;
+}
+
+.card,
+.dropdown-content {
+  background-color: var(--color-surface) !important;
+}
+
+button {
+  box-shadow: var(--softUIEffect-intense) !important;
+  /* border : 2px solid rgba(84, 92, 151,0.75) !important */
+}
+
+.HeadIcon {
+  border-radius: 50%;
+  box-shadow: var(--softUIEffect-intense) !important;
+  padding: 5px;
+  color: var(--color-KfinBlue) !important;
+}
+
+.HeadTitle {
+  margin-top: 20px;
+}
+
+input {
+  -webkit-box-shadow: var(--softUIEffect-3i) !important;
+  box-shadow: var(--softUIEffect-3i) !important;
+  border-radius: 10px !important;
+  border-bottom: none !important;
+}
+
+.input-field > label,
+input {
+  padding-left: 16px !important;
+}
+
+.inner-padding {
+  padding-left: 15px !important;
+}
+
+.login-input__password,
+.login-input__email {
+  padding-left: 16px !important;
+  margin-left: 20px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  /* width: 90% !important ; */
+}
+
+.login-input__inputs > div > label {
+  margin-left: 20px;
+}
+
+.login-input__inputPass > div {
+  margin-top: -10px;
+}
+
+/* error handling */
+.login-input__error-mail > p {
+  color: #f44336 !important;
+  margin-left: 10% !important;
+  margin-top: -20px !important;
+}
+
+.reset-error__password > p {
+  color: #f44336 !important;
+  width: 90%;
+}
+
+.forgot-input__error-mail > p {
+  color: #f44336 !important;
+  margin-left: 10px !important;
+  margin-top: -20px !important;
+}
+
+.forgot-btn {
+  margin-left: 10px !important;
+}
+/*-----------------------*/
+
+.register-input__error-mail > p,
+.register-input__error-phone > p {
+  /* padding-left: 24px;
+  margin-top: -24px !important; */
+  margin-top: -30px !important;
+  color: #f44336;
+  padding-left: 15px;
+  width: 40%;
+}
+
+.register-input__error-password > p {
+  color: #f44336;
+  padding-left: 54%;
+  margin-top: -40px !important;
+  width: 100%;
+}
+
+.input-field > .active {
+  margin-top: -12px !important;
+  /* background-color: red !important; */
+}
+
+.register-row__email > .input-field {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/*--------------------------*/
+
+.registration-wrapper {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.Register-input__half > div {
+  margin-right: 0;
+}
+
+.Register-input__half,
+.accessRequest-input__half {
+  display: flex;
+}
+
+.accessRequest-secound__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accessRequest-third__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.Register-container {
+  margin-top: 130px;
+}
+
+.Register-card {
+  margin: auto;
+  width: 65%;
+}
+
+/*----------------*/
+
+.swal-modal {
+  background-color: var(--color-surface) !important;
+  border-radius: 25px;
+}
+
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.swal-button,
+.swal-button--cancel {
+  box-shadow: var(--softUIEffect-intense) !important;
+  background-color: var(--color-KfinBlue) !important;
+  color: white !important;
+  border-radius: 10px;
+  margin-right: 50% !important;
+}
+.swal-icon--success,
+.swal-icon--success__line {
+  border-color: var(--color-KfinBlue-brightshade) !important;
+}
+
+.swal-icon--success__ring,
+.swal-icon--success__ring::before,
+.swal-icon--success__ring::after,
+.swal-icon--warning {
+  z-index: 1;
+  background-color: var(--color-surface) !important ;
+  box-shadow: var(--softUIEffect-intense) !important;
+}
+.swal-icon--success:after,
+.swal-icon--success:before {
+  background-color: var(--color-surface) !important;
+}
+.swal-icon--success__hide-corners {
+  display: none !important;
+}
+
+.swal-overlay {
+  backdrop-filter: blur(2px) !important;
+}
+
+/*------------------------------*/
+
+.Home-status__card {
+  background: rgba(236, 240, 243) !important;
+  width: 80%;
+  margin: auto !important;
+  margin-top: 100px !important;
+  /* backdrop-filter: blur(5px) !important; */
+  color: var(--color-KfinBlue) !important;
+}
+
+/*---------------------------*/
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px !important;
+}
+
+.error-card {
+  padding: 15px 5px 0px 5px !important;
+  margin: 90px 30px 0px 30px !important;
+}
+
+.error-card__p {
+  color: var(--color-KfinBlue) !important;
+  font-size: 18px;
+}
+
+.error-card__h2 {
+  color: var(--color-KfinBlue) !important;
+}
+
+.error-card__btn {
+  box-shadow: var(--softUIEffect-intense) !important;
+  background-color: var(--color-KfinBlue) !important;
+  border-radius: 10px;
+}
+
+/* --------admin card design -----------*/
+
+.admin-topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.admin-topbar__right {
+  margin: 5px !important;
+  display: flex;
+}
+
+.admin-topbar__left {
+  display: flex;
+}
+
+.admin-topbar__left > h4 {
+  font-size: 24px !important;
+  margin-left: 20px;
+  color: var(--color-KfinBlue) !important;
+}
+
+.admin-container {
+  padding: 5px;
+  background-color: var(--color-surface) !important;
+  margin-top: 70px !important;
+}
+
+.admin-card {
+  box-shadow: var(--softUIEffect-3) !important;
+  margin-bottom: 15px;
+}
+
+.admin-card > .card-content {
+  padding: 24px !important;
+}
+
+.admin-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  padding-left: 20px;
+}
+
+.admin-card__top-name-mail {
+  display: flex;
+}
+
+.admin-card__top-name-mail-input {
+  box-shadow: none !important;
+}
+
+.admin-card__top-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-card__top-actions > div > button {
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: var(--softUIEffect-intense) !important;
+  color: white !important;
+  font-size: 12px !important;
+  width: 90px !important;
+}
+
+.Kfin-btn-blue {
+  background-color: var(--color-KfinBlue) !important;
+}
+
+.Kfin-btn-red {
+  background-color: var(--color-KfinRed) !important;
+}
+
+.Kfin-btn-green {
+  background-color: teal !important;
+}
+
+.kfin-neu-btn__blue {
+  background: rgb(41, 51, 125) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(41, 51, 125, 1) 0%,
+    #2057a6 100%
+  ) !important;
+  color: white !important;
+  border-radius: 10px;
+  box-shadow: var(--softUIEffect-intense) !important;
+  transition: 2s ease !important;
+}
+
+.kfin-neu-btn__blue:hover {
+  /* background-color: rgb(156, 0, 0) !important; */
+  background: #2057a6 !important;
+  background: linear-gradient(
+    180deg,
+    #2057a6 0%,
+    rgba(41, 51, 125, 1) 100%
+  ) !important;
+}
+
+.admin-card__top-name-mail > .input-field > label,
+input {
+  padding-left: 0px !important;
+}
+
+.admin-card__top-name-mail > div > .input-field {
+  margin-top: -5px;
+  margin-bottom: -15px !important;
+}
+
+.adminNumber {
+  width: 50px !important;
+}
+
+.admin-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0px;
+  padding: 0px 15px;
+}
+
+.admin-card__option {
+  margin-top: -10px;
+  flex: 1 !important;
+  max-width: 210px !important;
+  /* width: 300px !important; */
+  margin-right: 20px !important;
+}
+
+.admin-bottom__btn {
+  border-radius: 20px;
+  background-color: var(--color-surface);
+  color: black;
+}
+
+.admin-bottom__conatiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.admin-bottom__conatiner > div > ul > li:hover,
+a:hover {
+  background-color: var(--color-KfinBlue) !important;
+  color: white !important;
+}
+
+.admin-bottom__btn:focus,
+.admin-bottom__btn:hover {
+  background-color: transparent !important;
+}
+
+.admin-bottom__conatiner > div > .dropdown-content {
+  border-radius: 15px !important;
+  box-shadow: var(--softUIEffect-3) !important;
+}
+
+.forgot-input {
+  margin-left: 15%;
+}
+
+.accessRequest {
+  padding-right: 20px;
+  margin-top: 40px;
+}
+
+.accessRequest-bottom > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  position: fixed !important;
+  height: 5px;
+  display: block;
+  width: 100%;
+  z-index: 200 !important;
+  overflow: visible !important;
+  top: 55px !important;
+  background: var(--color-KfinBlue) !important;
+  background: linear-gradient(
+    90deg,
+    #2057a6,
+    #ecf0f3,
+    #ecf0f3,
+    #2057a6
+  ) !important;
+}
+
+/* #progress01 {
+  position: absolute;
+  margin-top: 10px !important;
+} */
+
+.reset-input {
+  margin-top: -20px !important;
+}
+
+.reset-row {
+  margin-right: 15px;
+}
+
+.reset-row > div > div > label {
+  margin-top: -10px !important;
+}
+
+.activate-input {
+  margin-left: -35px !important;
+}
+
+.header-logout:hover {
+  background-color: var(--color-surface) !important;
+  color: darkblue !important;
+  transition: 0.2s ease !important;
+}
+
+.accessRequestTitle {
+  margin-bottom: 30px !important;
+  color: var(--color-KfinBlue) !important;
+}
+
+.kfin-btn {
+  border-radius: 8px;
+  background-color: var(--color-KfinBlue);
+  box-shadow: var(--softUIEffect-8);
+}
+
+.pagination > li.active {
+  background-color: rgb(189, 52, 59) !important;
+  border-radius: 50%;
+  padding: 0px 1px;
+  margin-right: 5px;
+  box-shadow: var(--softUIEffect-3);
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  color: black !important;
+}
+
+.link-style-a {
+  color: var(--color-KfinBlue) !important;
+}
+
+.link-style-a:hover {
+  background-color: transparent !important;
+  color: rgb(2, 2, 105) !important;
+}
+
+#radiorow > label {
+  margin-right: 50px !important;
+}
+
+#radiorow {
+  /* box-shadow: var(--softUIEffect-1) !important; */
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+}
+
+.createlogin-radiotitle {
+  background-color: var(--color-KfinBlue) !important;
+  color: white !important;
+  width: 25% !important;
+  padding: 7px 14px;
+  border-radius: 10px;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  box-shadow: none !important;
+  background-color: var(--color-KfinRed) !important;
+  border: 2px solid var(--color-KfinRed) !important;
+}
+
+.searchbar > input {
+  padding: 7px 14px !important;
+  width: 300px !important;
+  height: 25px !important;
+  margin-right: 10px !important;
+  font-size: 16px !important;
+  border: 1px solid transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  outline: transparent !important;
+}
+
+.searchbar > button {
+  background-color: var(--color-surface) !important;
+  border-radius: 5px !important;
+  width: 45px !important;
+  height: 35px !important;
+}
+
+.safariBorder {
+  border-bottom: 2px solid #d1d1d1 !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  padding-left: 20px !important;
+}
+
+.banner {
+  background-image: url("./img/digixbanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 700px;
+  height: 550px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: var(--softUIEffect-7) !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannerWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftBanner {
+  height: 550px;
+  width: 450px;
+  flex: 1;
+
+  z-index: 100;
+}
+
+.rightBanner {
+  height: 550px;
+  width: 450px;
+  flex: 1;
+
+  z-index: 100;
+}
+
+.banner > a:hover {
+  background-color: transparent !important;
+}

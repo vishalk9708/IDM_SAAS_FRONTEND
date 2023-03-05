@@ -1,0 +1,9 @@
+.userTypeRadioGroup{
+    /* padding:10px; */
+}
+.userTypeRadioGroup::before{
+
+}
+.userTypeRadioGroup::after{
+    background-color: aqua !important;
+}

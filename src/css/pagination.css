@@ -1,0 +1,31 @@
+.PaginationNew {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+  /* width: 400px; */
+}
+
+.PaginationNew > li {
+  margin: 15px;
+}
+
+.PaginationNew > li > a {
+  color: grey;
+  font-size: 16px;
+  font-family: "PoppinsSemiBold";
+}
+.PaginationNew > .selected {
+  background-color: teal;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--softUIEffect-3);
+}
+
+.PaginationNew > .selected > a {
+  color: white;
+}

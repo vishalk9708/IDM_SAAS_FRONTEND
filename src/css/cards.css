@@ -1,0 +1,39 @@
+.card-container {
+  margin-top: 100px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-card-container {
+  margin-top: 0px !important;
+}
+
+.login-card {
+  min-width: 400px !important;
+  width: 30% !important;
+}
+
+.createuser-card {
+  min-width: 400px !important;
+  width: 65% !important;
+  margin-top: 80px !important;
+}
+
+.card-container-home {
+  margin-top: 0px !important;
+}
+
+.forgot-card {
+  min-width: 400px !important;
+  width: 40% !important;
+}
+
+.reset-card {
+  min-width: 400px !important;
+  width: 30% !important;
+}
+
+.card-container-accesReuqest {
+  margin-top: 60px !important;
+}

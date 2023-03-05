@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+
+    <link rel="icon" href="./kfinNew.png" />
+    <link rel="stylesheet" href="./scrollbar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Identity Management</title>
+    <link
+      rel="preload"
+      href="../src/Fonts/PoppinsSemiBold.ttf"
+      as="font"
+      type="font/truetype"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../src/Fonts/PoppinsLight.ttf"
+      as="font"
+      type="font/truetype"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../src/Fonts/PoppinsMedium.ttf"
+      as="font"
+      type="font/truetype"
+      crossorigin
+    />
+    <style>
+      @font-face {
+        src: url(../src/Fonts/PoppinsSemiBold.ttf);
+        /* src: local('PoppinsSemiBold'),
+        url('../src/Fonts/PoppinsSemiBold.ttf') format('truetype'); */
+        font-weight: normal;
+        font-style: normal;
+        font-family: PoppinsSemiBold;
+      }
+
+      @font-face {
+        src: url(../src/Fonts/PoppinsLight.ttf);
+        /* src: local('PoppinsLight'),
+        url('../src/Fonts/PoppinsLight.ttf') format('truetype'); */
+        font-weight: normal;
+        font-style: normal;
+        font-family: PoppinsLight;
+      }
+
+      @font-face {
+        src: url(../src/Fonts/PoppinsMedium.ttf);
+        /* src: local('PoppinsMedium'),
+        url('../src/Fonts/PoppinsMedium.ttf') format('truetype'); */
+        font-weight: normal;
+        font-style: normal;
+        font-family: PoppinsMedium;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script
+      src="../node_modules/jquery/jquery.min.js"
+      type="text/html"
+    ></script>
+    <script
+      src="../node_modules/materialize-css/dist/js/materialize.min.js"
+      type="text/html"
+    ></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root"></div>
+  </body>
+</html>
